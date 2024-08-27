@@ -5,6 +5,7 @@
 }
 
 body {
+  padding-top: 100px;
   background-color: #141414;
 }
 
@@ -14,6 +15,11 @@ body {
   align-items: center;
   background-color: #101010;
   height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other elements */
 }
 
 .navbar img {
@@ -23,15 +29,22 @@ body {
 }
 
 .search-emoji {
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
 }
 
 .navbar h3 {
-  margin-right: 2rem;
+  margin-right: 5rem;
 }
 
 .list-title {
   font-size: 2.5rem;
   margin-left: 2rem;
   margin-bottom: 1.5rem;
+}
+
+.fav-placeholder {
+  margin-left: 2rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  width: 30%;
 }

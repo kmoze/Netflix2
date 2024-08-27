@@ -25,8 +25,16 @@ function App() {
           <span className="search-emoji">🔍</span> Search
         </h3>
       </div>
-      <h2 className="list-title">My Favs </h2>
-      <Movielist onFavMovie={onFavMovie} faveMovies={faveMovies} />
+      {faveMovies.length > 0 ? (
+        <>
+          <h2 className="list-title">My Favs</h2>
+          <Movielist onFavMovie={onFavMovie} faveMovies={faveMovies} />
+        </>
+      ) : (
+        <h2 className="fav-placeholder">
+          Favourite some movies to add to your list...
+        </h2>
+      )}
       <h2 className="list-title">Discover</h2>
       <Discover onFavMovie={onFavMovie} faveMovies={faveMovies} />
     </>
