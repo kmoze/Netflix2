@@ -16,6 +16,12 @@ function App() {
 
   return (
     <>
+      <div className="navbar">
+        <img
+          src="src/assets/BrandAssets_Logos_01-Wordmark.jpg"
+          alt="netflix-logo"
+        />
+      </div>
       <h2 className="list-title">My Favs </h2>
       <Movielist onFavMovie={onFavMovie} faveMovies={faveMovies} />
       <h2 className="list-title">Discover</h2>
