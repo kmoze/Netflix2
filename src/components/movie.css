@@ -18,14 +18,31 @@
   height: 50px;
   font-size: 15px;
   margin-right: 0.5rem;
+  opacity: 0;
+}
+
+.plus-btn:hover {
+  opacity: 1;
+}
+
+.movie-poster {
+  .plus-btn {
+    opacity: 0;
+  }
+  p {
+    opacity: 0;
+  }
+}
+.movie-poster:hover {
+  .plus-btn {
+    opacity: 1;
+  }
+  p {
+    opacity: 1;
+  }
 }
 
 .plus-btn:active,
 .plus-btn:focus {
   border: none;
-}
-
-.poster-img {
-  /* object-fit: cover;
-  object-position: 0 50px; */
 }
