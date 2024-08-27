@@ -1,5 +1,7 @@
 import './movie.css';
 
+
+
 function Movie({ movie }) {
   const baseURL = 'https://image.tmdb.org/t/p/w300/';
 
