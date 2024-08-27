@@ -24,10 +24,6 @@
   outline: none;
 }
 
-.plus-btn:hover {
-  opacity: 1;
-}
-
 .movie-poster {
   .plus-btn {
     opacity: 0;
@@ -40,12 +36,13 @@
   .plus-btn {
     opacity: 1;
   }
+
   p {
     opacity: 1;
   }
 }
 
-.plus-btn:active,
-.plus-btn:focus {
-  border: none;
+.plus-btn img:hover {
+  border: 0.2px solid rgb(196, 196, 196);
+  border-radius: 50%;
 }
