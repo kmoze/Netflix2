@@ -8,13 +8,17 @@ function App() {
 
   const onFavMovie = (movie) => {
     console.log(movie);
-    setFaveMovies([...faveMovies, movie]);
+    if (!faveMovies.includes(movie)) {
+      setFaveMovies([...faveMovies, movie]);
+    } else {
+      setFaveMovies(faveMovies.filter(el => el.id !== movie.id))
+    }
   };
 
   return (
     <>
-      <h2 className="list-title">My Favs</h2>
-      <Movielist faveMovies={faveMovies} />
+      <h2 className="list-title">My Favs </h2>
+      <Movielist onFavMovie={onFavMovie} faveMovies={faveMovies} />
       <h2 className="list-title">Discover</h2>
       <Discover onFavMovie={onFavMovie} />
     </>

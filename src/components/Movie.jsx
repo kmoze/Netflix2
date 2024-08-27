@@ -9,7 +9,9 @@ function Movie({ movie, onFavMovie }) {
         <img
           src={`${baseURL}${movie.poster_path}`}
           alt={movie.title}
-          width={300}
+          width={250}
+          // height={200}
+          className='poster-img'
         />
         <div className="title-btn">
           <p className="movie-title">{movie.title}</p>

@@ -18,3 +18,8 @@
   font-size: 15px;
   margin-right: 0.5rem;
 }
+
+.poster-img {
+  /* object-fit: cover;
+  object-position: 0 50px; */
+}
