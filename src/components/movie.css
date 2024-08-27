@@ -20,6 +20,10 @@
   margin-right: 0.5rem;
 }
 
+.plus-btn:focus {
+  outline: none;
+}
+
 .plus-btn:hover {
   opacity: 1;
 }
