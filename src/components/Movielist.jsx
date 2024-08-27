@@ -1,5 +1,7 @@
 import Movie from "./Movie"
 
+
+
 function Movielist() {
   return (
     <div>
