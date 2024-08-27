@@ -9,6 +9,9 @@ body {
 }
 
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #101010;
   height: 100px;
 }
@@ -17,6 +20,14 @@ body {
   height: 100px;
   width: 200px;
   margin-left: -1rem;
+}
+
+.search-emoji {
+  margin-right: 0.5rem;
+}
+
+.navbar h3 {
+  margin-right: 2rem;
 }
 
 .list-title {

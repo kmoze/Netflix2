@@ -21,6 +21,9 @@ function App() {
           src="src/assets/BrandAssets_Logos_01-Wordmark.jpg"
           alt="netflix-logo"
         />
+        <h3>
+          <span className="search-emoji">🔍</span> Search
+        </h3>
       </div>
       <h2 className="list-title">My Favs </h2>
       <Movielist onFavMovie={onFavMovie} faveMovies={faveMovies} />

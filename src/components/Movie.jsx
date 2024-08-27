@@ -7,7 +7,7 @@ function Movie({ movie, onFavMovie, faveMovies }) {
     <>
       <div className="movie-poster" id={movie.id}>
         <img
-          src={`${baseURL}${movie.poster_path}`}
+          src={`${baseURL}${movie.backdrop_path}`}
           alt={movie.title}
           width={250}
           className="poster-img"

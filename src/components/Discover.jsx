@@ -10,7 +10,6 @@ const Discover = ({ onFavMovie, faveMovies }) => {
         return res.json();
       })
       .then((data) => {
-        console.log(data);
         setMovies(data);
       });
   }, []);
