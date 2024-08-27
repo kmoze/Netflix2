@@ -10,12 +10,11 @@ function Movie({ movie, onFavMovie }) {
           src={`${baseURL}${movie.poster_path}`}
           alt={movie.title}
           width={250}
-          // height={200}
-          className='poster-img'
+          className="poster-img"
         />
         <div className="title-btn">
           <p className="movie-title">{movie.title}</p>
-          <button className="plus-btn" onClick={onFavMovie}>
+          <button className="plus-btn" onClick={() => onFavMovie(movie)}>
             ➕
           </button>
         </div>

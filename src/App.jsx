@@ -7,11 +7,12 @@ function App() {
   const [faveMovies, setFaveMovies] = useState([]);
 
   const onFavMovie = (movie) => {
-    console.log(movie);
+    // console.log(movie);
     if (!faveMovies.includes(movie)) {
+      console.log(movie);
       setFaveMovies([...faveMovies, movie]);
     } else {
-      setFaveMovies(faveMovies.filter(el => el.id !== movie.id))
+      setFaveMovies(faveMovies.filter((el) => el.id !== movie.id));
     }
   };
 

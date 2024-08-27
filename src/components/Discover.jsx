@@ -20,11 +20,7 @@ const Discover = ({ onFavMovie }) => {
         {movies.map((movie, index) => {
           return (
             <li className="movie">
-              <Movie
-                movie={movie}
-                key={index}
-                onFavMovie={() => onFavMovie(movie)}
-              />
+              <Movie movie={movie} key={index} onFavMovie={onFavMovie} />
             </li>
           );
         })}
