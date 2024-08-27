@@ -1,0 +1,20 @@
+.title-btn {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-70px);
+  align-items: center;
+}
+
+.movie-title {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.plus-btn {
+  background: white;
+  border-radius: 50%;
+  height: 50px;
+  font-size: 15px;
+  margin-right: 0.5rem;
+}
