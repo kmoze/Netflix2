@@ -1,0 +1,17 @@
+.fave-list {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.fave-movies {
+  display: flex;
+  list-style: none;
+}
+
+.movie {
+  margin-right: 0.5rem;
+}
+
+.movie-title {
+  color: whitesmoke;
+}

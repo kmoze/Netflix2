@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Movie from './Movie';
 import './discover.css';
 
-const Discover = () => {
+const Discover = ({ onFavMovie }) => {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     fetch('https://cw-api-1.onrender.com/movied/discover')
@@ -20,7 +20,11 @@ const Discover = () => {
         {movies.map((movie, index) => {
           return (
             <li className="movie">
-              <Movie movie={movie} key={index} />
+              <Movie
+                movie={movie}
+                key={index}
+                onFavMovie={() => onFavMovie(movie)}
+              />
             </li>
           );
         })}

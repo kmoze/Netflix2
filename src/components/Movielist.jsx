@@ -1,19 +1,20 @@
-import { useState } from "react"
-import Movie from "./Movie"
+import Movie from './Movie';
+import './movielist.css';
 
-
-
-function Movielist() {
-
-  const [faveMovies, setFaveMovies] = useState([]);
-
+function Movielist({ faveMovies }) {
   return (
-    <div>
-      <ul>
-        <li><Movie/></li>
+    <div className="fave-list">
+      <ul className="fave-movies">
+        {faveMovies.map((movie, index) => {
+          return (
+            <li className="movie">
+              <Movie movie={movie} key={index} />
+            </li>
+          );
+        })}
       </ul>
     </div>
-  )
+  );
 }
 
-export default Movielist
+export default Movielist;
