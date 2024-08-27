@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-
-const baseURL = 'https://image.tmdb.org/t/p/w300/'
+import Movie from './Movie';
+import './discover.css';
 
 const Discover = () => {
   const [movies, setMovies] = useState([]);
@@ -15,11 +15,16 @@ const Discover = () => {
       });
   }, []);
   return (
-    <div>
-
-      {movies.map((movie) => (
-        <img key={movie.id} src={`${baseURL}${movie.poster_path}`} alt={movie.title} width={100} />
-      ))}
+    <div className="discover-list">
+      <ul className="discover-movies">
+        {movies.map((movie, index) => {
+          return (
+            <li className="movie">
+              <Movie movie={movie} key={index} />
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };

@@ -1,0 +1,16 @@
+.discover-list {
+  display: flex;
+}
+
+.discover-movies {
+  display: flex;
+  list-style: none;
+}
+
+.movie {
+  margin-right: 0.5rem;
+}
+
+.movie-title {
+  color: whitesmoke;
+}
