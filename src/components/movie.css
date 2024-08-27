@@ -12,11 +12,17 @@
 }
 
 .plus-btn {
-  background: white;
+  background: transparent;
+  border: none;
   border-radius: 50%;
   height: 50px;
   font-size: 15px;
   margin-right: 0.5rem;
+}
+
+.plus-btn:active,
+.plus-btn:focus {
+  border: none;
 }
 
 .poster-img {

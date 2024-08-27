@@ -7,9 +7,7 @@ function App() {
   const [faveMovies, setFaveMovies] = useState([]);
 
   const onFavMovie = (movie) => {
-    // console.log(movie);
     if (!faveMovies.includes(movie)) {
-      console.log(movie);
       setFaveMovies([...faveMovies, movie]);
     } else {
       setFaveMovies(faveMovies.filter((el) => el.id !== movie.id));
@@ -21,7 +19,7 @@ function App() {
       <h2 className="list-title">My Favs </h2>
       <Movielist onFavMovie={onFavMovie} faveMovies={faveMovies} />
       <h2 className="list-title">Discover</h2>
-      <Discover onFavMovie={onFavMovie} />
+      <Discover onFavMovie={onFavMovie} faveMovies={faveMovies} />
     </>
   );
 }

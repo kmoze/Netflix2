@@ -5,10 +5,14 @@ function Movielist({ faveMovies, onFavMovie }) {
   return (
     <div className="fave-list">
       <ul className="fave-movies">
-        {faveMovies.map((movie, index) => {
+        {faveMovies.map((movie) => {
           return (
-            <li className="movie">
-              <Movie movie={movie} key={index} onFavMovie={onFavMovie} />
+            <li className="movie" key={movie.id}>
+              <Movie
+                movie={movie}
+                onFavMovie={onFavMovie}
+                faveMovies={faveMovies}
+              />
             </li>
           );
         })}
